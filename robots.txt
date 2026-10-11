@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guilhermekodama.github.io/troca-na-loja/sitemap.xml
