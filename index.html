@@ -3,12 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Troca na Loja — trocas e devoluções automáticas para lojas Nuvemshop</title>
-<meta name="description" content="Pare de resolver troca no WhatsApp e na planilha. Portal de trocas para lojas Nuvemshop: o cliente pede a troca sozinho e recebe o vale-troca automático. Fundador R$ 19/mês.">
+<title>Vale-troca automático para Nuvemshop | Troca na Loja</title>
+<meta name="description" content="Trocas e devoluções na Nuvemshop sem WhatsApp nem planilha: o cliente pede a troca num link e o vale-troca sai automático. Fundador R$ 19/mês.">
 <meta name="robots" content="index,follow">
-<meta property="og:title" content="Troca na Loja — vale-troca automático para Nuvemshop">
-<meta property="og:description" content="O cliente pede a troca sozinho. O vale-troca sai automático. Sem taxa por troca.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://guilhermekodama.github.io/troca-na-loja/">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Troca na Loja — vale-troca automático para lojas Nuvemshop">
+<meta property="og:description" content="O cliente pede a troca sozinho. Você aprova em 1 clique. O vale-troca sai automático. Sem taxa por troca.">
+<meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://guilhermekodama.github.io/troca-na-loja/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Como fazer troca e devolução numa loja Nuvemshop sem WhatsApp?","acceptedAnswer":{"@type":"Answer","text":"Com o Troca na Loja, o cliente abre o pedido de troca num link da sua loja (número do pedido + e-mail), escolhe itens e motivo, e você aprova num painel. Ao aprovar, o vale-troca é criado como cupom de uso único na Nuvemshop."}},
+{"@type":"Question","name":"O que é vale-troca na Nuvemshop?","acceptedAnswer":{"@type":"Answer","text":"É um cupom de desconto de valor exato e uso único criado na sua loja Nuvemshop, que o cliente usa no checkout para comprar outro produto no lugar do devolvido."}},
+{"@type":"Question","name":"Quanto custa?","acceptedAnswer":{"@type":"Answer","text":"Preço de Fundador: R$ 19 por mês, sem taxa por troca, enquanto for assinante. Se o app não estiver disponível na sua loja em até 60 dias, o valor pago é devolvido integralmente."}},
+{"@type":"Question","name":"Quais são os prazos de troca e devolução em loja virtual?","acceptedAnswer":{"@type":"Answer","text":"Na compra online, o Código de Defesa do Consumidor (art. 49) dá 7 dias de arrependimento a partir do recebimento. Para defeito, o prazo de reclamação é de 30 dias (produto não durável) ou 90 dias (durável), pelo art. 26. Troca por tamanho ou cor fora desses casos segue a política da sua loja."}}
+]}
+</script>
 <style>
 :root{--p:#3b2a8f;--a:#6d4aff;--c:#f5f3ff;--t:#1f2933;--m:#6b7280}
 *{box-sizing:border-box}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--t);line-height:1.55}
@@ -34,33 +46,81 @@ form label{display:block;font-weight:600;margin:12px 0 4px}
 form input,form select{width:100%;padding:11px;border:1px solid #cbd2d9;border-radius:6px;font-size:16px}
 details{background:#fff;border:1px solid #e1e4e8;border-radius:8px;padding:14px 18px;margin-bottom:10px}
 summary{font-weight:700;cursor:pointer}
+.mock{background:#fff;border:1px solid #d6d1f5;border-radius:12px;padding:18px;font-size:15px;box-shadow:0 2px 10px #3b2a8f14}
+.mock .bar{font-size:12px;color:var(--m);border-bottom:1px solid #eee;margin:-6px -6px 12px;padding:0 6px 8px}
+.mock .f{border:1px solid #cbd2d9;border-radius:6px;padding:8px 10px;margin:6px 0;color:#374151;background:#fafafa}
+.mock .ok{background:#ecfdf5;border:1px dashed #10b981;border-radius:8px;padding:12px;text-align:center}
+.mock .cod{font-family:ui-monospace,Menlo,monospace;font-size:22px;font-weight:800;letter-spacing:2px;color:#065f46}
+.tag{display:inline-block;font-size:12px;background:#fde68a;color:#78350f;border-radius:99px;padding:2px 10px;margin-left:6px}
+table.cmp{width:100%;border-collapse:collapse;background:#fff}table.cmp td,table.cmp th{border:1px solid #e1e4e8;padding:10px;text-align:left;vertical-align:top}table.cmp th{background:var(--c)}
 footer{background:#111827;color:#9ca3af;padding:28px 0;font-size:14px}footer a{color:#d1d5db}
 </style>
 </head>
 <body>
 <header><div class="c">
-  <h1>Troca e devolução na sua loja Nuvemshop, sem WhatsApp e sem planilha.</h1>
-  <p>O cliente abre o pedido de troca sozinho num link da sua loja. Você aprova com um clique e o vale-troca é criado automaticamente na Nuvemshop, pronto para usar no checkout.</p>
+  <h1>Trocas e devoluções na Nuvemshop com vale-troca automático — sem WhatsApp e sem planilha.</h1>
+  <p>“Ficou pequeno, quero trocar.” Hoje isso vira conversa no WhatsApp, cupom criado à mão e linha na planilha. Com o Troca na Loja o cliente abre a troca sozinho num link da sua loja, você aprova com um clique e o vale-troca nasce na Nuvemshop, pronto para o checkout.</p>
   <a class="btn" href="https://pay.kiwify.com.br/VpZCDqF">Garantir vaga de Fundador — R$ 19/mês</a><a class="btn s" href="#lista-espera">Entrar na lista de espera</a>
   <div class="sel">Em pré-lançamento · Vagas de Fundador limitadas · Sem taxa por troca</div>
 </div></header>
 
 <section><div class="c">
-  <h2>O problema: troca hoje é no braço</h2>
+  <h2>O problema: cada troca custa 4 tarefas manuais</h2>
+  <p>Em loja de moda, calçado e acessório, troca de tamanho e cor é rotina. Sem um fluxo próprio, toda troca passa pelas mesmas etapas manuais:</p>
   <div class="g3">
-    <div class="card"><h3>WhatsApp lotado</h3>“Quero trocar o tamanho” chega no meio de cem outras conversas. Você perde o fio, o cliente cobra, a avaliação cai.</div>
-    <div class="card"><h3>Planilha e cupom na mão</h3>Para cada troca você confere o pedido, cria um cupom manual, anota numa planilha e torce para ninguém usar duas vezes.</div>
-    <div class="card"><h3>Venda que vira reembolso</h3>Quando a troca é demorada, o cliente pede o dinheiro de volta. Com vale-troca rápido, ele compra de novo na sua loja.</div>
+    <div class="card"><h3>1. Achar o pedido</h3>O cliente manda “quero trocar” no WhatsApp ou no Instagram, sem número do pedido. Você procura no painel pelo nome.</div>
+    <div class="card"><h3>2. Conferir a regra</h3>Está dentro do prazo? É arrependimento (7 dias, CDC art. 49), defeito ou só tamanho? Cada atendente decide de um jeito.</div>
+    <div class="card"><h3>3. Criar o cupom à mão</h3>Valor exato, uso único, validade… e torcer para ninguém usar duas vezes ou passar o código para outra pessoa.</div>
+    <div class="card"><h3>4. Anotar na planilha</h3>Para saber depois o que voltou, o que foi reembolsado e quem já usou o vale. A planilha nunca está atualizada.</div>
+    <div class="card"><h3>Resultado</h3>Troca demorada vira pedido de reembolso e avaliação ruim. Troca rápida com vale vira nova compra na sua loja.</div>
   </div>
 </div></section>
 
 <section class="alt"><div class="c">
-  <h2>Como funciona, em 3 passos</h2>
+  <h2>Como funciona a troca, em 3 passos</h2>
   <div class="g3">
     <div class="card"><div class="n">1</div><h3>Cliente pede a troca</h3>No link “Trocas e devoluções” da sua loja, ele informa número do pedido e e-mail, escolhe os itens e o motivo. Seu prazo e suas regras valem automaticamente.</div>
     <div class="card"><div class="n">2</div><h3>Você aprova em um clique</h3>Todos os pedidos de troca num painel só, com status. Troca por outro tamanho ou cor gera o novo pedido na Nuvemshop.</div>
     <div class="card"><div class="n">3</div><h3>Vale-troca automático</h3>O app cria na sua loja um cupom de valor exato e uso único (ou crédito na loja, onde disponível) e manda o código para o cliente. A devolução física segue pela etiqueta reversa do Nuvem Envio.</div>
   </div>
+</div></section>
+
+<section id="exemplo"><div class="c">
+  <h2>Veja o fluxo do vale-troca <span class="tag">exemplo ilustrativo</span></h2>
+  <p>Simulação estática de como o cliente e o lojista veem a troca. Loja, pedido e código são fictícios.</p>
+  <div class="g3">
+    <div class="mock"><div class="bar">loja-exemplo.com.br/trocas · Cliente</div>
+      <b>Trocas e devoluções</b>
+      <div class="f">Nº do pedido: <b>#1234</b></div>
+      <div class="f">E-mail da compra: maria@exemplo.com</div>
+      <div class="f">Item: Vestido midi floral — tam. M</div>
+      <div class="f">Motivo: <b>Ficou pequeno</b> · Quero: <b>vale-troca</b></div>
+      <div style="font-size:13px;color:var(--m)">Dentro do prazo da loja (recebido há 4 dias) ✔</div>
+    </div>
+    <div class="mock"><div class="bar">Painel do lojista</div>
+      <b>Pedidos de troca</b>
+      <div class="f">#1234 · Maria S. · Vestido midi M · R$ 189,90<br><span style="color:#b45309">● aguardando aprovação</span></div>
+      <div class="f">#1229 · João P. · Tênis 41 → 42<br><span style="color:#047857">● aprovado · etiqueta reversa enviada</span></div>
+      <div style="margin-top:8px"><span class="btn v" style="font-size:14px;padding:8px 14px">Aprovar e gerar vale</span></div>
+    </div>
+    <div class="mock"><div class="bar">E-mail para o cliente</div>
+      <b>Sua troca foi aprovada 🎉</b>
+      <div class="ok" style="margin:10px 0"><div style="font-size:13px">Seu vale-troca</div><div class="cod">TROCA-7K2M9</div><div style="font-size:13px">R$ 189,90 · uso único · válido por 90 dias</div></div>
+      <div style="font-size:13px;color:var(--m)">Use no checkout da loja. Para devolver a peça, use a etiqueta reversa anexa.</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="c">
+  <h2>Troca no braço × Troca na Loja</h2>
+  <table class="cmp">
+    <tr><th></th><th>Hoje (WhatsApp + planilha)</th><th>Com Troca na Loja</th></tr>
+    <tr><td>Pedido de troca</td><td>Mensagem solta, sem nº do pedido</td><td>Formulário com pedido, item e motivo</td></tr>
+    <tr><td>Regra de prazo</td><td>Cada atendente confere</td><td>Sua política aplicada automaticamente</td></tr>
+    <tr><td>Vale-troca</td><td>Cupom criado à mão</td><td>Cupom de valor exato e uso único gerado ao aprovar</td></tr>
+    <tr><td>Controle</td><td>Planilha desatualizada</td><td>Painel com status de cada troca</td></tr>
+    <tr><td>Custo</td><td>Seu tempo</td><td>R$ 19/mês (Fundador), sem taxa por troca</td></tr>
+  </table>
 </div></section>
 
 <section><div class="c">
@@ -90,11 +150,16 @@ footer{background:#111827;color:#9ca3af;padding:28px 0;font-size:14px}footer a{c
 </div></section>
 
 <section><div class="c">
-  <h2>Perguntas frequentes</h2>
+  <h2>Perguntas frequentes sobre trocas na Nuvemshop</h2>
   <details><summary>Funciona em qualquer loja Nuvemshop?</summary>Sim. O vale-troca usa cupom de uso único, que funciona em todos os planos. Em lojas com crédito na loja ativo, ele pode virar saldo na conta do cliente.</details>
   <details><summary>Já existe? Quando lança?</summary>Estamos em pré-lançamento e validando com lojistas. Fundadores entram primeiro. Se não lançar em 60 dias, o reembolso é integral.</details>
   <details><summary>Faz a logística reversa?</summary>Não cobramos por isso. A devolução física usa a etiqueta reversa que a Nuvemshop já oferece no Nuvem Envio.</details>
   <details><summary>Qual a diferença para outros apps de troca?</summary>Preço fixo baixo, sem taxa por troca e sem fatura separada. Feito para loja pequena e média de moda, calçado e acessórios.</details>
+  <details><summary>O que é vale-troca na Nuvemshop?</summary>É um cupom de desconto de valor exato e uso único criado na sua loja. O cliente usa no checkout para levar outro produto no lugar do devolvido, então a venda fica na loja em vez de virar reembolso.</details>
+  <details><summary>Quais prazos de troca e devolução valem na loja virtual?</summary>Na compra online, o CDC (art. 49) garante 7 dias de arrependimento a partir do recebimento. Para defeito, o prazo de reclamação é de 30 dias (não durável) ou 90 dias (durável), pelo art. 26. Troca por tamanho ou cor fora desses casos segue a política que você definir, e o app aplica essa política no formulário.</details>
+  <details><summary>Posso escolher entre vale-troca, troca direta e reembolso?</summary>Sim. Você define quais opções o cliente vê. Vale-troca e troca por outro tamanho/cor são automáticos; reembolso continua sendo feito por você no meio de pagamento.</details>
+  <details><summary>Preciso instalar algo no tema da loja?</summary>Não precisa mexer no código. O link “Trocas e devoluções” vai no menu ou no rodapé da loja.</details>
+  <details><summary>Como funciona o pagamento de Fundador?</summary>Pela Kiwify, R$ 19/mês enquanto você for assinante, cancelável quando quiser. Se o app não estiver disponível na sua loja em até 60 dias, devolvemos 100% do que você pagou.</details>
 </div></section>
 
 <footer><div class="c">
